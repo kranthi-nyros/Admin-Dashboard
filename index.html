@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Dashboard</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="graph.css">
+      <!--MDL--> 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--MDL-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+         <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+               <!-- Title -->
+               <span class="mdl-layout-title"><i class="material-icons E">explicit</i></span> 
+               <h3 class="mart"> -Mart</h3>
+               <!-- Add spacer, to align navigation to the right -->
+               <div class="mdl-layout-spacer"></div>
+               <!-- Navigation. We hide it in small screens. -->
+               <nav class="mdl-navigation mdl-layout--large-screen-only">
+                  <a class="mdl-navigation__link mainlink" href="">
+                  <span class="glyphicon glyphicon-search"></span></a>
+                  <a class="mdl-navigation__link mainlink" href="">
+                     <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="5">
+                        mail
+                     </div>
+                  </a>
+                  <a class="mdl-navigation__link mainlink" href="">
+                     <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="3">
+                        notifications
+                     </div>
+                  </a>
+                  <a class="mdl-navigation__link mainlink" href="">John<i class="material-icons">arrow_drop_down</i>
+                  <img src="assets/user.jpg" class="logo"></a>
+                  <a class="mdl-navigation__link mainlink" href="">
+                  
+               </nav>
+            </div>
+         </header>
+         <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"></span>
+            <nav class="mdl-navigation sublinks">
+               <a class="mdl-navigation__link" href=""><i class="material-icons">home</i> Home</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">description</i> Categories</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">rate_review</i> Menu Items</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">date_range</i> Table Booking</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">account_balance_wallet</i>  Coupons</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">label</i> Tags</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">people</i> Users</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">publish</i> Push Notification</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">chrome_reader_mode</i> News</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">location_on</i> Delivery Options</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">loyalty</i> Loyalty</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">info</i> Business Info</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">settings_applications</i> Setting</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">chat</i> Chat</a>
+               <a class="mdl-navigation__link" href=""><i class="material-icons">people</i> Testimonials</a> 
+               <a class="mdl-navigation__link" href=""><i class="material-icons">subscriptions</i> Subscribers</a>             
+            </nav>
+         </div>
+         <div class="page-content">
+            <!--content-->
+            <div class="row">
+               <div class="cl-md-12" style="display:inline-flex;!important;">
+                  <div class="cl-md-1">
+                     <div class="cl-md-1 side">
+                        <a title="Home" href=""><i class="material-icons">home</i></a>
+                        <a title="Categories" href=""><i class="material-icons">description</i></a>
+                        <a title="Items" href=""><i class="material-icons">rate_review</i></a>
+                        <a href=""><i class="material-icons">account_balance_wallet</i></a>
+                        <a href=""><i class="material-icons">label</i></a>
+                        <a href=""><i class="material-icons">people</i></a>
+                        <a href=""><i class="material-icons">publish</i></a>
+                        <a href=""><i class="material-icons">chrome_reader_mode</i></a>
+                        <a href=""><i class="material-icons">location_on</i></a>
+                        <a href=""><i class="material-icons">loyalty</i></a>
+                        <a href=""><i class="material-icons">settings_applications</i></a>
+                        <a href=""><i class="material-icons">chat</i></a>
+                        <a href=""><i class="material-icons">subscriptions</i></a>
+                        <a href=""><i class="material-icons">info</i></a>
+                     </div>
+                  </div>
+                  <div class="cl-md-11 content">
+                     <div class="cl-md-1" style="height: 200px;">
+                        <div class="container">
+                           
+                             
+                               <div class="row">
+                                 <h4>Dashboard<br> 
+                     
+                                 <p>Welcome to E-Mart admin panel!</p></h4> 
+                             </div> 
+                    
+                    
+                           <div class="row">
+                              <article class="col-xs-4" style="margin-left: -20px;margin-right:10px;">
+                                 <div class="cards first">
+                                    <i class="material-icons icon">shopping_basket</i>
+                                    <hr class="divider"/>
+                                    <h2 class="title"><b>MENU ITEMS</b></h2>
+                                    <div class="info">
+                                       <hr class="divider"/>
+                                       <p class="lead">Toatal Items 34</p>
+                                       <a class="btn btn-lg center-block">Add Items</a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="col-xs-4">
+                                 <div class="cards second">
+                                    <i class="material-icons icon" style="background-color: #f7a932">view_list </i>
+                                    <hr class="divider"/>
+                                    <h2 class="title"><b>CATEGORIES</b></h2>
+                                    <div class="info">
+                                       <hr class="divider"/>
+                                       <p class="lead"> Toatal 10</p>
+                                       <a class="btn btn-lg center-block yellow">Add+</a>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="col-xs-4">
+                                 <div class="cards third">
+                                    <i class="material-icons icon" style="background-color: #ef456d" >add_shopping_cart</i>
+                                    <hr class="divider"/>
+                                    <h2 class="title"><b>ORDERS</b></h2>
+                                    <div class="info">
+                                       <hr class="divider"/>
+                                       <p class="lead">Toatal 1000</p>
+                                       <a class="btn btn-lg center-block red">View all</a> 
+                                    </div>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cl-md-1 grid">
+                        <div style="margin-left:-10px;">
+                           <h1 style="margin-left:-900px;"> PRODUCT SALES REPORT</h1>
+                           <section class="container" style="background-image: url(assets/download.png);background-repeat: no-repeat;height:600px;margin-top: 50px;margin-right:100px;">
+                              <!-- START - COLUMN GRAPH -->
+                              <div class="column-graph">
+                                 <hr class="esq">
+                                 <hr class="bot">
+                                 <div class="column gringo" id="chile"></div>
+                                 <div class="column gringo" id="uruguai"></div>
+                                 <div class="column gringo" id="argentina"></div>
+                                 <div class="column gringo" id="eua"></div>
+                                 <div class="column nac"></div>
+                                 <div class="column gringo" id="canada"></div>
+                              </div>
+                              <!-- END - COLUMN GRAPH -->
+                           </section>
+                        </div>
+                        <div class="bg frame">
+                           <div class="content">
+                              <h1 style="margin-top: -20px;margin-bottom: 50px;">CATEGORY SALES REPORT</h1>
+                              <svg id="svg"></svg>
+                           </div>
+                        </div>
+                        <div class="cl-md-12" style="display: flex; margin-top: 50px;">
+                           <div class="cl-md-6 userlist" style="margin-right:20px;">
+                              <div style="margin-left: 20px;">
+                                 <h4>NEW USERS LIST</h4>
+                                 <p>this is the sample data here for crm</p>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>#</li>
+                                    <li> First Name</li>
+                                    <li> Last Name</li>
+                                    <li> Username</li>
+                                    <li> Product</li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>1</li>
+                                    <li style="margin-right: 110px;"> John</li>
+                                    <li style="margin-right: 100px;"> Smith</li>
+                                    <li> @john</li>
+                                    <li> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">New</button></li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>2</li>
+                                    <li style="margin-right: 110px;"> Ravi</li>
+                                    <li style="margin-right: 100px;"> Kan</li>
+                                    <li style="margin-right: 60px;"> @Ravi </li>
+                                    <li> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Active</button></li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>3</li>
+                                    <li style="margin-right: 110px;">Priya</li>
+                                    <li style="margin-right: 100px;">Max</li>
+                                    <li> @Priya</li>
+                                    <li> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">inactive</button></li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>4</li>
+                                    <li style="margin-right: 110px;"> John</li>
+                                    <li style="margin-right: 100px;"> Smith</li>
+                                    <li> @john</li>
+                                    <li> <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Pending</button></li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                           </div>
+                           <div class="cl-md-6 kranthi">
+                              <div style="margin-left: 20px;">
+                                 <h4>EARINGS</h4>
+                                 <p>this is the sample data here for crm</p>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="EARINGS">
+                                    <li>#</li>
+                                    <li style="margin-right:100px;">Name</li>
+                                    <li style="margin-right:100px;"> Chart</li>
+                                    <li> Result</li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>1</li>
+                                    <li> John Smith</li>
+                                    <li>
+                                       <td>
+                                          <span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#01c0c8&quot;], &quot;stroke&quot;:[&quot;#01c0c8&quot;]}" data-height="40" style="display: none;">0,-3,-2,-4,-5,-4,-3,-2,-5,-1</span>
+                                          <svg class="peity" height="40" width="120">
+                                             <polygon fill="#01c0c8" points="0 0.5 0 0.5 13.333333333333334 23.9 26.666666666666668 16.1 40 31.7 53.333333333333336 39.5 66.66666666666667 31.7 80 23.9 93.33333333333334 16.1 106.66666666666667 39.5 120 8.299999999999997 120 0.5"></polygon>
+                                             <polyline fill="none" points="0 0.5 13.333333333333334 23.9 26.666666666666668 16.1 40 31.7 53.333333333333336 39.5 66.66666666666667 31.7 80 23.9 93.33333333333334 16.1 106.66666666666667 39.5 120 8.299999999999997" stroke="#01c0c8" stroke-width="1" stroke-linecap="square"></polyline>
+                                          </svg>
+                                       </td>
+                                    </li>
+                                    <li><i class="material-icons">trending_down</i> 28.76%</li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>2</li>
+                                    <li>Ravi kan</li>
+                                    <li>
+                                       <td><span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#01c0c8&quot;], &quot;stroke&quot;:[&quot;#01c0c8&quot;]}" data-height="40" style="display: none;">0,-1,-1,-2,-3,-1,-2,-3,-1,-2</span><svg class="peity" height="40" width="120"><polygon fill="#01c0c8" points="0 0.5 0 0.5 13.333333333333334 13.5 26.666666666666668 13.5 40 26.5 53.333333333333336 39.5 66.66666666666667 13.5 80 26.5 93.33333333333334 39.5 106.66666666666667 13.5 120 26.5 120 0.5"></polygon><polyline fill="none" points="0 0.5 13.333333333333334 13.5 26.666666666666668 13.5 40 26.5 53.333333333333336 39.5 66.66666666666667 13.5 80 26.5 93.33333333333334 39.5 106.66666666666667 13.5 120 26.5" stroke="#01c0c8" stroke-width="1" stroke-linecap="square"></polyline></svg> </td>
+                                    </li>
+                                   
+                                    <li>  <i class="material-icons">trending_down</i>  8.55%</li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>3</li>
+                                    <li> Priya</li>
+                                    <li>
+                                       <td>
+                                          <span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#01c0c8&quot;], &quot;stroke&quot;:[&quot;#01c0c8&quot;]}" data-height="40" style="display: none;">0,-3,-2,-4,-5,-4,-3,-2,-5,-1</span>
+                                          <svg class="peity" height="40" width="120">
+                                             <polygon fill="#01c0c8" points="0 0.5 0 0.5 13.333333333333334 23.9 26.666666666666668 16.1 40 31.7 53.333333333333336 39.5 66.66666666666667 31.7 80 23.9 93.33333333333334 16.1 106.66666666666667 39.5 120 8.299999999999997 120 0.5"></polygon>
+                                             <polyline fill="none" points="0 0.5 13.333333333333334 23.9 26.666666666666668 16.1 40 31.7 53.333333333333336 39.5 66.66666666666667 31.7 80 23.9 93.33333333333334 16.1 106.66666666666667 39.5 120 8.299999999999997" stroke="#01c0c8" stroke-width="1" stroke-linecap="square"></polyline>
+                                          </svg>
+                                       </td>
+                                    </li>
+                                    <li> <i class="material-icons">trending_up</i>52.55%</li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                              <div class="cl-md-1">
+                                 <hr>
+                                 <ul class="details">
+                                    <li>4</li>
+                                    <li> John Smith</li>
+                                    <li>
+                                       <td><span class="peity-line" data-width="120" data-peity="{ &quot;fill&quot;: [&quot;#01c0c8&quot;], &quot;stroke&quot;:[&quot;#01c0c8&quot;]}" data-height="40" style="display: none;">0,3,6,1,2,4,6,3,2,1</span><svg class="peity" height="40" width="120"><polygon fill="#01c0c8" points="0 39.5 0 39.5 13.333333333333334 20 26.666666666666668 0.5 40 33 53.333333333333336 26.5 66.66666666666667 13.5 80 0.5 93.33333333333334 20 106.66666666666667 26.5 120 33 120 39.5"></polygon><polyline fill="none" points="0 39.5 13.333333333333334 20 26.666666666666668 0.5 40 33 53.333333333333336 26.5 66.66666666666667 13.5 80 0.5 93.33333333333334 20 106.66666666666667 26.5 120 33" stroke="#01c0c8" stroke-width="1" stroke-linecap="square"></polyline></svg> </td>
+                                    </li>
+                                    <li> <i class="material-icons">trending_up</i> 32.55%</li>
+                                 </ul>
+                                 <hr>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer">
+                        <h5>  2017 ©E-Mart Admin </h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+      <script src="assets/plugins/svg-donut-chart-framework.js"></script>
+   </body>
+</html>
